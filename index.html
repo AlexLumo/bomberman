@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <style>
+            #map table {
+                border: 4px solid #000;
+                border-collapse: collapse;
+            }
+            #map td {
+                text-align: center;
+                width: 50px;
+                height: 50px;
+                
+            }
+            .c-1 {
+                background-color: blue;
+            }
+            .c1, .c4 {
+                background-color: #000;
+                background-image: url(wall.png);
+                background-size: cover;
+            }
+            .c0 {
+                background-color: #FFF;
+                background-image: url(grass.png);
+                background-size: cover;
+            }
+            .c2 {
+                background-color: green;
+                background-image: url(bomb.png);
+                background-size: cover;
+            }
+            .c3 {
+                background-color: orangered;
+                 background-image: url(fire.jpg);
+                background-size: cover;
+            }
+            #x {
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                transform: rotate(45deg);
+            }
+            .p1 {
+                background-color: blueviolet;
+                border: 5px solid gold;                
+            }
+            .p2 {
+                background-color: greenyellow;
+                border: 5px solid saddlebrown;                
+            }
+        </style>
+    </head>
+    <body>
+        <div id="map"></div>
+        <script src="jquery-3.2.1.js"></script> 
+        <script src="maze.js"></script>
+        <script src="game.js"></script>
+        <script src="man.js"></script>
+        <script src="position.js"></script>        
+        <script src="logic.js"></script>              
+    </body>
+</html>
